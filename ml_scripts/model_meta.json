@@ -1,0 +1,23 @@
+{
+    "feature_cols": [
+        "prev_loans",
+        "prev_late",
+        "late_ratio",
+        "duration_days",
+        "peran_code",
+        "kategori_code"
+    ],
+    "kategori_map": {
+        "Elektronik": 0,
+        "Jaringan": 1,
+        "Komputer": 2,
+        "Perkakas": 3,
+        "Aksesori": 4
+    },
+    "peran_map": {
+        "Mahasiswa": 0,
+        "Dosen": 1
+    },
+    "accuracy": 0.75,
+    "total_samples": 159
+}

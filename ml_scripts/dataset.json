@@ -1,0 +1,1592 @@
+[
+    {
+        "user_id": 19,
+        "peran": "Mahasiswa",
+        "kategori": "Elektronik",
+        "prev_loans": 0,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 7,
+        "is_late": 1
+    },
+    {
+        "user_id": 20,
+        "peran": "Mahasiswa",
+        "kategori": "Jaringan",
+        "prev_loans": 0,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 7,
+        "is_late": 1
+    },
+    {
+        "user_id": 21,
+        "peran": "Mahasiswa",
+        "kategori": "Kabel",
+        "prev_loans": 0,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 7,
+        "is_late": 0
+    },
+    {
+        "user_id": 23,
+        "peran": "Dosen",
+        "kategori": "Elektronik",
+        "prev_loans": 0,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 7,
+        "is_late": 0
+    },
+    {
+        "user_id": 21,
+        "peran": "Mahasiswa",
+        "kategori": "Kabel",
+        "prev_loans": 0,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 7,
+        "is_late": 0
+    },
+    {
+        "user_id": 22,
+        "peran": "Mahasiswa",
+        "kategori": "Elektronik",
+        "prev_loans": 0,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 7,
+        "is_late": 1
+    },
+    {
+        "user_id": 23,
+        "peran": "Dosen",
+        "kategori": "Alat Lab",
+        "prev_loans": 0,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 7,
+        "is_late": 0
+    },
+    {
+        "user_id": 19,
+        "peran": "Mahasiswa",
+        "kategori": "Kabel",
+        "prev_loans": 0,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 7,
+        "is_late": 1
+    },
+    {
+        "user_id": 20,
+        "peran": "Mahasiswa",
+        "kategori": "Alat Lab",
+        "prev_loans": 0,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 7,
+        "is_late": 0
+    },
+    {
+        "user_id": 1000,
+        "peran": "Mahasiswa",
+        "kategori": "Aksesori",
+        "prev_loans": 6,
+        "prev_late": 2,
+        "late_ratio": 0.33,
+        "duration_days": 5,
+        "is_late": 0
+    },
+    {
+        "user_id": 1001,
+        "peran": "Mahasiswa",
+        "kategori": "Perkakas",
+        "prev_loans": 12,
+        "prev_late": 7,
+        "late_ratio": 0.58,
+        "duration_days": 1,
+        "is_late": 1
+    },
+    {
+        "user_id": 1002,
+        "peran": "Dosen",
+        "kategori": "Komputer",
+        "prev_loans": 10,
+        "prev_late": 4,
+        "late_ratio": 0.4,
+        "duration_days": 14,
+        "is_late": 1
+    },
+    {
+        "user_id": 1003,
+        "peran": "Dosen",
+        "kategori": "Jaringan",
+        "prev_loans": 7,
+        "prev_late": 2,
+        "late_ratio": 0.29,
+        "duration_days": 8,
+        "is_late": 0
+    },
+    {
+        "user_id": 1004,
+        "peran": "Dosen",
+        "kategori": "Aksesori",
+        "prev_loans": 11,
+        "prev_late": 1,
+        "late_ratio": 0.09,
+        "duration_days": 10,
+        "is_late": 0
+    },
+    {
+        "user_id": 1005,
+        "peran": "Dosen",
+        "kategori": "Aksesori",
+        "prev_loans": 4,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 6,
+        "is_late": 1
+    },
+    {
+        "user_id": 1006,
+        "peran": "Mahasiswa",
+        "kategori": "Elektronik",
+        "prev_loans": 11,
+        "prev_late": 8,
+        "late_ratio": 0.73,
+        "duration_days": 1,
+        "is_late": 1
+    },
+    {
+        "user_id": 1007,
+        "peran": "Dosen",
+        "kategori": "Perkakas",
+        "prev_loans": 9,
+        "prev_late": 9,
+        "late_ratio": 1,
+        "duration_days": 8,
+        "is_late": 1
+    },
+    {
+        "user_id": 1008,
+        "peran": "Mahasiswa",
+        "kategori": "Aksesori",
+        "prev_loans": 13,
+        "prev_late": 5,
+        "late_ratio": 0.38,
+        "duration_days": 13,
+        "is_late": 1
+    },
+    {
+        "user_id": 1009,
+        "peran": "Dosen",
+        "kategori": "Aksesori",
+        "prev_loans": 6,
+        "prev_late": 4,
+        "late_ratio": 0.67,
+        "duration_days": 11,
+        "is_late": 0
+    },
+    {
+        "user_id": 1010,
+        "peran": "Mahasiswa",
+        "kategori": "Elektronik",
+        "prev_loans": 2,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 13,
+        "is_late": 1
+    },
+    {
+        "user_id": 1011,
+        "peran": "Dosen",
+        "kategori": "Jaringan",
+        "prev_loans": 3,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 12,
+        "is_late": 0
+    },
+    {
+        "user_id": 1012,
+        "peran": "Mahasiswa",
+        "kategori": "Aksesori",
+        "prev_loans": 8,
+        "prev_late": 7,
+        "late_ratio": 0.88,
+        "duration_days": 4,
+        "is_late": 1
+    },
+    {
+        "user_id": 1013,
+        "peran": "Mahasiswa",
+        "kategori": "Jaringan",
+        "prev_loans": 14,
+        "prev_late": 11,
+        "late_ratio": 0.79,
+        "duration_days": 7,
+        "is_late": 0
+    },
+    {
+        "user_id": 1014,
+        "peran": "Dosen",
+        "kategori": "Perkakas",
+        "prev_loans": 14,
+        "prev_late": 5,
+        "late_ratio": 0.36,
+        "duration_days": 12,
+        "is_late": 1
+    },
+    {
+        "user_id": 1015,
+        "peran": "Dosen",
+        "kategori": "Aksesori",
+        "prev_loans": 7,
+        "prev_late": 3,
+        "late_ratio": 0.43,
+        "duration_days": 6,
+        "is_late": 1
+    },
+    {
+        "user_id": 1016,
+        "peran": "Dosen",
+        "kategori": "Aksesori",
+        "prev_loans": 9,
+        "prev_late": 9,
+        "late_ratio": 1,
+        "duration_days": 13,
+        "is_late": 0
+    },
+    {
+        "user_id": 1017,
+        "peran": "Dosen",
+        "kategori": "Jaringan",
+        "prev_loans": 9,
+        "prev_late": 5,
+        "late_ratio": 0.56,
+        "duration_days": 8,
+        "is_late": 0
+    },
+    {
+        "user_id": 1018,
+        "peran": "Dosen",
+        "kategori": "Aksesori",
+        "prev_loans": 13,
+        "prev_late": 12,
+        "late_ratio": 0.92,
+        "duration_days": 14,
+        "is_late": 1
+    },
+    {
+        "user_id": 1019,
+        "peran": "Mahasiswa",
+        "kategori": "Aksesori",
+        "prev_loans": 6,
+        "prev_late": 2,
+        "late_ratio": 0.33,
+        "duration_days": 8,
+        "is_late": 0
+    },
+    {
+        "user_id": 1020,
+        "peran": "Dosen",
+        "kategori": "Jaringan",
+        "prev_loans": 15,
+        "prev_late": 12,
+        "late_ratio": 0.8,
+        "duration_days": 13,
+        "is_late": 1
+    },
+    {
+        "user_id": 1021,
+        "peran": "Dosen",
+        "kategori": "Jaringan",
+        "prev_loans": 9,
+        "prev_late": 2,
+        "late_ratio": 0.22,
+        "duration_days": 2,
+        "is_late": 0
+    },
+    {
+        "user_id": 1022,
+        "peran": "Mahasiswa",
+        "kategori": "Perkakas",
+        "prev_loans": 8,
+        "prev_late": 4,
+        "late_ratio": 0.5,
+        "duration_days": 5,
+        "is_late": 1
+    },
+    {
+        "user_id": 1023,
+        "peran": "Dosen",
+        "kategori": "Elektronik",
+        "prev_loans": 6,
+        "prev_late": 6,
+        "late_ratio": 1,
+        "duration_days": 4,
+        "is_late": 1
+    },
+    {
+        "user_id": 1024,
+        "peran": "Mahasiswa",
+        "kategori": "Perkakas",
+        "prev_loans": 7,
+        "prev_late": 6,
+        "late_ratio": 0.86,
+        "duration_days": 7,
+        "is_late": 0
+    },
+    {
+        "user_id": 1025,
+        "peran": "Mahasiswa",
+        "kategori": "Perkakas",
+        "prev_loans": 2,
+        "prev_late": 2,
+        "late_ratio": 1,
+        "duration_days": 9,
+        "is_late": 0
+    },
+    {
+        "user_id": 1026,
+        "peran": "Mahasiswa",
+        "kategori": "Perkakas",
+        "prev_loans": 6,
+        "prev_late": 6,
+        "late_ratio": 1,
+        "duration_days": 5,
+        "is_late": 0
+    },
+    {
+        "user_id": 1027,
+        "peran": "Dosen",
+        "kategori": "Perkakas",
+        "prev_loans": 7,
+        "prev_late": 3,
+        "late_ratio": 0.43,
+        "duration_days": 10,
+        "is_late": 1
+    },
+    {
+        "user_id": 1028,
+        "peran": "Dosen",
+        "kategori": "Aksesori",
+        "prev_loans": 6,
+        "prev_late": 5,
+        "late_ratio": 0.83,
+        "duration_days": 1,
+        "is_late": 0
+    },
+    {
+        "user_id": 1029,
+        "peran": "Mahasiswa",
+        "kategori": "Jaringan",
+        "prev_loans": 7,
+        "prev_late": 5,
+        "late_ratio": 0.71,
+        "duration_days": 3,
+        "is_late": 1
+    },
+    {
+        "user_id": 1030,
+        "peran": "Dosen",
+        "kategori": "Elektronik",
+        "prev_loans": 4,
+        "prev_late": 2,
+        "late_ratio": 0.5,
+        "duration_days": 11,
+        "is_late": 0
+    },
+    {
+        "user_id": 1031,
+        "peran": "Mahasiswa",
+        "kategori": "Aksesori",
+        "prev_loans": 9,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 9,
+        "is_late": 1
+    },
+    {
+        "user_id": 1032,
+        "peran": "Mahasiswa",
+        "kategori": "Perkakas",
+        "prev_loans": 8,
+        "prev_late": 1,
+        "late_ratio": 0.13,
+        "duration_days": 4,
+        "is_late": 0
+    },
+    {
+        "user_id": 1033,
+        "peran": "Mahasiswa",
+        "kategori": "Aksesori",
+        "prev_loans": 12,
+        "prev_late": 12,
+        "late_ratio": 1,
+        "duration_days": 5,
+        "is_late": 1
+    },
+    {
+        "user_id": 1034,
+        "peran": "Dosen",
+        "kategori": "Aksesori",
+        "prev_loans": 3,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 10,
+        "is_late": 1
+    },
+    {
+        "user_id": 1035,
+        "peran": "Mahasiswa",
+        "kategori": "Komputer",
+        "prev_loans": 6,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 1,
+        "is_late": 0
+    },
+    {
+        "user_id": 1036,
+        "peran": "Dosen",
+        "kategori": "Elektronik",
+        "prev_loans": 3,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 13,
+        "is_late": 0
+    },
+    {
+        "user_id": 1037,
+        "peran": "Dosen",
+        "kategori": "Jaringan",
+        "prev_loans": 5,
+        "prev_late": 3,
+        "late_ratio": 0.6,
+        "duration_days": 5,
+        "is_late": 1
+    },
+    {
+        "user_id": 1038,
+        "peran": "Dosen",
+        "kategori": "Jaringan",
+        "prev_loans": 8,
+        "prev_late": 8,
+        "late_ratio": 1,
+        "duration_days": 4,
+        "is_late": 1
+    },
+    {
+        "user_id": 1039,
+        "peran": "Dosen",
+        "kategori": "Komputer",
+        "prev_loans": 11,
+        "prev_late": 3,
+        "late_ratio": 0.27,
+        "duration_days": 1,
+        "is_late": 0
+    },
+    {
+        "user_id": 1040,
+        "peran": "Dosen",
+        "kategori": "Jaringan",
+        "prev_loans": 9,
+        "prev_late": 6,
+        "late_ratio": 0.67,
+        "duration_days": 11,
+        "is_late": 0
+    },
+    {
+        "user_id": 1041,
+        "peran": "Mahasiswa",
+        "kategori": "Komputer",
+        "prev_loans": 0,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 3,
+        "is_late": 0
+    },
+    {
+        "user_id": 1042,
+        "peran": "Mahasiswa",
+        "kategori": "Aksesori",
+        "prev_loans": 8,
+        "prev_late": 7,
+        "late_ratio": 0.88,
+        "duration_days": 3,
+        "is_late": 1
+    },
+    {
+        "user_id": 1043,
+        "peran": "Mahasiswa",
+        "kategori": "Elektronik",
+        "prev_loans": 5,
+        "prev_late": 3,
+        "late_ratio": 0.6,
+        "duration_days": 2,
+        "is_late": 1
+    },
+    {
+        "user_id": 1044,
+        "peran": "Mahasiswa",
+        "kategori": "Jaringan",
+        "prev_loans": 0,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 2,
+        "is_late": 0
+    },
+    {
+        "user_id": 1045,
+        "peran": "Dosen",
+        "kategori": "Perkakas",
+        "prev_loans": 14,
+        "prev_late": 3,
+        "late_ratio": 0.21,
+        "duration_days": 8,
+        "is_late": 0
+    },
+    {
+        "user_id": 1046,
+        "peran": "Mahasiswa",
+        "kategori": "Komputer",
+        "prev_loans": 8,
+        "prev_late": 3,
+        "late_ratio": 0.38,
+        "duration_days": 13,
+        "is_late": 1
+    },
+    {
+        "user_id": 1047,
+        "peran": "Dosen",
+        "kategori": "Elektronik",
+        "prev_loans": 3,
+        "prev_late": 3,
+        "late_ratio": 1,
+        "duration_days": 14,
+        "is_late": 1
+    },
+    {
+        "user_id": 1048,
+        "peran": "Mahasiswa",
+        "kategori": "Komputer",
+        "prev_loans": 0,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 4,
+        "is_late": 1
+    },
+    {
+        "user_id": 1049,
+        "peran": "Dosen",
+        "kategori": "Perkakas",
+        "prev_loans": 10,
+        "prev_late": 3,
+        "late_ratio": 0.3,
+        "duration_days": 6,
+        "is_late": 1
+    },
+    {
+        "user_id": 1050,
+        "peran": "Dosen",
+        "kategori": "Jaringan",
+        "prev_loans": 6,
+        "prev_late": 2,
+        "late_ratio": 0.33,
+        "duration_days": 1,
+        "is_late": 1
+    },
+    {
+        "user_id": 1051,
+        "peran": "Mahasiswa",
+        "kategori": "Elektronik",
+        "prev_loans": 13,
+        "prev_late": 3,
+        "late_ratio": 0.23,
+        "duration_days": 8,
+        "is_late": 0
+    },
+    {
+        "user_id": 1052,
+        "peran": "Mahasiswa",
+        "kategori": "Elektronik",
+        "prev_loans": 5,
+        "prev_late": 3,
+        "late_ratio": 0.6,
+        "duration_days": 7,
+        "is_late": 0
+    },
+    {
+        "user_id": 1053,
+        "peran": "Mahasiswa",
+        "kategori": "Jaringan",
+        "prev_loans": 7,
+        "prev_late": 2,
+        "late_ratio": 0.29,
+        "duration_days": 4,
+        "is_late": 0
+    },
+    {
+        "user_id": 1054,
+        "peran": "Dosen",
+        "kategori": "Jaringan",
+        "prev_loans": 4,
+        "prev_late": 1,
+        "late_ratio": 0.25,
+        "duration_days": 2,
+        "is_late": 0
+    },
+    {
+        "user_id": 1055,
+        "peran": "Dosen",
+        "kategori": "Jaringan",
+        "prev_loans": 14,
+        "prev_late": 4,
+        "late_ratio": 0.29,
+        "duration_days": 3,
+        "is_late": 0
+    },
+    {
+        "user_id": 1056,
+        "peran": "Dosen",
+        "kategori": "Elektronik",
+        "prev_loans": 10,
+        "prev_late": 1,
+        "late_ratio": 0.1,
+        "duration_days": 11,
+        "is_late": 0
+    },
+    {
+        "user_id": 1057,
+        "peran": "Dosen",
+        "kategori": "Perkakas",
+        "prev_loans": 11,
+        "prev_late": 10,
+        "late_ratio": 0.91,
+        "duration_days": 10,
+        "is_late": 1
+    },
+    {
+        "user_id": 1058,
+        "peran": "Dosen",
+        "kategori": "Perkakas",
+        "prev_loans": 14,
+        "prev_late": 14,
+        "late_ratio": 1,
+        "duration_days": 5,
+        "is_late": 1
+    },
+    {
+        "user_id": 1059,
+        "peran": "Dosen",
+        "kategori": "Aksesori",
+        "prev_loans": 8,
+        "prev_late": 6,
+        "late_ratio": 0.75,
+        "duration_days": 11,
+        "is_late": 0
+    },
+    {
+        "user_id": 1060,
+        "peran": "Mahasiswa",
+        "kategori": "Komputer",
+        "prev_loans": 7,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 5,
+        "is_late": 1
+    },
+    {
+        "user_id": 1061,
+        "peran": "Mahasiswa",
+        "kategori": "Komputer",
+        "prev_loans": 1,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 10,
+        "is_late": 0
+    },
+    {
+        "user_id": 1062,
+        "peran": "Dosen",
+        "kategori": "Komputer",
+        "prev_loans": 6,
+        "prev_late": 4,
+        "late_ratio": 0.67,
+        "duration_days": 4,
+        "is_late": 0
+    },
+    {
+        "user_id": 1063,
+        "peran": "Mahasiswa",
+        "kategori": "Aksesori",
+        "prev_loans": 3,
+        "prev_late": 3,
+        "late_ratio": 1,
+        "duration_days": 7,
+        "is_late": 1
+    },
+    {
+        "user_id": 1064,
+        "peran": "Mahasiswa",
+        "kategori": "Aksesori",
+        "prev_loans": 13,
+        "prev_late": 11,
+        "late_ratio": 0.85,
+        "duration_days": 14,
+        "is_late": 1
+    },
+    {
+        "user_id": 1065,
+        "peran": "Mahasiswa",
+        "kategori": "Komputer",
+        "prev_loans": 6,
+        "prev_late": 1,
+        "late_ratio": 0.17,
+        "duration_days": 11,
+        "is_late": 0
+    },
+    {
+        "user_id": 1066,
+        "peran": "Dosen",
+        "kategori": "Jaringan",
+        "prev_loans": 15,
+        "prev_late": 2,
+        "late_ratio": 0.13,
+        "duration_days": 8,
+        "is_late": 0
+    },
+    {
+        "user_id": 1067,
+        "peran": "Dosen",
+        "kategori": "Elektronik",
+        "prev_loans": 0,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 5,
+        "is_late": 0
+    },
+    {
+        "user_id": 1068,
+        "peran": "Dosen",
+        "kategori": "Perkakas",
+        "prev_loans": 7,
+        "prev_late": 3,
+        "late_ratio": 0.43,
+        "duration_days": 10,
+        "is_late": 0
+    },
+    {
+        "user_id": 1069,
+        "peran": "Dosen",
+        "kategori": "Komputer",
+        "prev_loans": 2,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 3,
+        "is_late": 0
+    },
+    {
+        "user_id": 1070,
+        "peran": "Dosen",
+        "kategori": "Aksesori",
+        "prev_loans": 12,
+        "prev_late": 9,
+        "late_ratio": 0.75,
+        "duration_days": 12,
+        "is_late": 1
+    },
+    {
+        "user_id": 1071,
+        "peran": "Dosen",
+        "kategori": "Elektronik",
+        "prev_loans": 5,
+        "prev_late": 4,
+        "late_ratio": 0.8,
+        "duration_days": 9,
+        "is_late": 1
+    },
+    {
+        "user_id": 1072,
+        "peran": "Dosen",
+        "kategori": "Jaringan",
+        "prev_loans": 0,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 10,
+        "is_late": 0
+    },
+    {
+        "user_id": 1073,
+        "peran": "Dosen",
+        "kategori": "Perkakas",
+        "prev_loans": 15,
+        "prev_late": 3,
+        "late_ratio": 0.2,
+        "duration_days": 10,
+        "is_late": 0
+    },
+    {
+        "user_id": 1074,
+        "peran": "Dosen",
+        "kategori": "Perkakas",
+        "prev_loans": 2,
+        "prev_late": 2,
+        "late_ratio": 1,
+        "duration_days": 10,
+        "is_late": 1
+    },
+    {
+        "user_id": 1075,
+        "peran": "Dosen",
+        "kategori": "Elektronik",
+        "prev_loans": 10,
+        "prev_late": 3,
+        "late_ratio": 0.3,
+        "duration_days": 12,
+        "is_late": 1
+    },
+    {
+        "user_id": 1076,
+        "peran": "Dosen",
+        "kategori": "Perkakas",
+        "prev_loans": 13,
+        "prev_late": 3,
+        "late_ratio": 0.23,
+        "duration_days": 5,
+        "is_late": 0
+    },
+    {
+        "user_id": 1077,
+        "peran": "Mahasiswa",
+        "kategori": "Elektronik",
+        "prev_loans": 7,
+        "prev_late": 2,
+        "late_ratio": 0.29,
+        "duration_days": 13,
+        "is_late": 0
+    },
+    {
+        "user_id": 1078,
+        "peran": "Dosen",
+        "kategori": "Perkakas",
+        "prev_loans": 0,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 4,
+        "is_late": 0
+    },
+    {
+        "user_id": 1079,
+        "peran": "Mahasiswa",
+        "kategori": "Komputer",
+        "prev_loans": 4,
+        "prev_late": 3,
+        "late_ratio": 0.75,
+        "duration_days": 13,
+        "is_late": 1
+    },
+    {
+        "user_id": 1080,
+        "peran": "Mahasiswa",
+        "kategori": "Aksesori",
+        "prev_loans": 2,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 7,
+        "is_late": 0
+    },
+    {
+        "user_id": 1081,
+        "peran": "Mahasiswa",
+        "kategori": "Aksesori",
+        "prev_loans": 11,
+        "prev_late": 1,
+        "late_ratio": 0.09,
+        "duration_days": 11,
+        "is_late": 0
+    },
+    {
+        "user_id": 1082,
+        "peran": "Mahasiswa",
+        "kategori": "Perkakas",
+        "prev_loans": 2,
+        "prev_late": 1,
+        "late_ratio": 0.5,
+        "duration_days": 10,
+        "is_late": 1
+    },
+    {
+        "user_id": 1083,
+        "peran": "Dosen",
+        "kategori": "Jaringan",
+        "prev_loans": 0,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 1,
+        "is_late": 0
+    },
+    {
+        "user_id": 1084,
+        "peran": "Dosen",
+        "kategori": "Komputer",
+        "prev_loans": 11,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 7,
+        "is_late": 0
+    },
+    {
+        "user_id": 1085,
+        "peran": "Mahasiswa",
+        "kategori": "Perkakas",
+        "prev_loans": 15,
+        "prev_late": 6,
+        "late_ratio": 0.4,
+        "duration_days": 1,
+        "is_late": 1
+    },
+    {
+        "user_id": 1086,
+        "peran": "Dosen",
+        "kategori": "Komputer",
+        "prev_loans": 1,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 4,
+        "is_late": 0
+    },
+    {
+        "user_id": 1087,
+        "peran": "Dosen",
+        "kategori": "Aksesori",
+        "prev_loans": 2,
+        "prev_late": 1,
+        "late_ratio": 0.5,
+        "duration_days": 12,
+        "is_late": 0
+    },
+    {
+        "user_id": 1088,
+        "peran": "Mahasiswa",
+        "kategori": "Komputer",
+        "prev_loans": 14,
+        "prev_late": 2,
+        "late_ratio": 0.14,
+        "duration_days": 13,
+        "is_late": 0
+    },
+    {
+        "user_id": 1089,
+        "peran": "Dosen",
+        "kategori": "Jaringan",
+        "prev_loans": 9,
+        "prev_late": 1,
+        "late_ratio": 0.11,
+        "duration_days": 10,
+        "is_late": 0
+    },
+    {
+        "user_id": 1090,
+        "peran": "Dosen",
+        "kategori": "Elektronik",
+        "prev_loans": 8,
+        "prev_late": 5,
+        "late_ratio": 0.63,
+        "duration_days": 13,
+        "is_late": 1
+    },
+    {
+        "user_id": 1091,
+        "peran": "Dosen",
+        "kategori": "Elektronik",
+        "prev_loans": 9,
+        "prev_late": 2,
+        "late_ratio": 0.22,
+        "duration_days": 14,
+        "is_late": 0
+    },
+    {
+        "user_id": 1092,
+        "peran": "Dosen",
+        "kategori": "Elektronik",
+        "prev_loans": 7,
+        "prev_late": 4,
+        "late_ratio": 0.57,
+        "duration_days": 1,
+        "is_late": 0
+    },
+    {
+        "user_id": 1093,
+        "peran": "Dosen",
+        "kategori": "Aksesori",
+        "prev_loans": 3,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 2,
+        "is_late": 0
+    },
+    {
+        "user_id": 1094,
+        "peran": "Dosen",
+        "kategori": "Aksesori",
+        "prev_loans": 13,
+        "prev_late": 7,
+        "late_ratio": 0.54,
+        "duration_days": 11,
+        "is_late": 1
+    },
+    {
+        "user_id": 1095,
+        "peran": "Dosen",
+        "kategori": "Elektronik",
+        "prev_loans": 14,
+        "prev_late": 7,
+        "late_ratio": 0.5,
+        "duration_days": 10,
+        "is_late": 0
+    },
+    {
+        "user_id": 1096,
+        "peran": "Mahasiswa",
+        "kategori": "Elektronik",
+        "prev_loans": 14,
+        "prev_late": 6,
+        "late_ratio": 0.43,
+        "duration_days": 8,
+        "is_late": 0
+    },
+    {
+        "user_id": 1097,
+        "peran": "Dosen",
+        "kategori": "Aksesori",
+        "prev_loans": 13,
+        "prev_late": 6,
+        "late_ratio": 0.46,
+        "duration_days": 4,
+        "is_late": 1
+    },
+    {
+        "user_id": 1098,
+        "peran": "Dosen",
+        "kategori": "Komputer",
+        "prev_loans": 0,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 10,
+        "is_late": 0
+    },
+    {
+        "user_id": 1099,
+        "peran": "Dosen",
+        "kategori": "Perkakas",
+        "prev_loans": 5,
+        "prev_late": 4,
+        "late_ratio": 0.8,
+        "duration_days": 11,
+        "is_late": 0
+    },
+    {
+        "user_id": 1100,
+        "peran": "Dosen",
+        "kategori": "Elektronik",
+        "prev_loans": 4,
+        "prev_late": 3,
+        "late_ratio": 0.75,
+        "duration_days": 11,
+        "is_late": 1
+    },
+    {
+        "user_id": 1101,
+        "peran": "Mahasiswa",
+        "kategori": "Perkakas",
+        "prev_loans": 3,
+        "prev_late": 1,
+        "late_ratio": 0.33,
+        "duration_days": 6,
+        "is_late": 0
+    },
+    {
+        "user_id": 1102,
+        "peran": "Mahasiswa",
+        "kategori": "Jaringan",
+        "prev_loans": 14,
+        "prev_late": 10,
+        "late_ratio": 0.71,
+        "duration_days": 6,
+        "is_late": 1
+    },
+    {
+        "user_id": 1103,
+        "peran": "Dosen",
+        "kategori": "Jaringan",
+        "prev_loans": 12,
+        "prev_late": 12,
+        "late_ratio": 1,
+        "duration_days": 12,
+        "is_late": 1
+    },
+    {
+        "user_id": 1104,
+        "peran": "Dosen",
+        "kategori": "Perkakas",
+        "prev_loans": 0,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 11,
+        "is_late": 0
+    },
+    {
+        "user_id": 1105,
+        "peran": "Dosen",
+        "kategori": "Komputer",
+        "prev_loans": 9,
+        "prev_late": 6,
+        "late_ratio": 0.67,
+        "duration_days": 14,
+        "is_late": 0
+    },
+    {
+        "user_id": 1106,
+        "peran": "Mahasiswa",
+        "kategori": "Elektronik",
+        "prev_loans": 13,
+        "prev_late": 2,
+        "late_ratio": 0.15,
+        "duration_days": 6,
+        "is_late": 0
+    },
+    {
+        "user_id": 1107,
+        "peran": "Dosen",
+        "kategori": "Aksesori",
+        "prev_loans": 0,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 7,
+        "is_late": 0
+    },
+    {
+        "user_id": 1108,
+        "peran": "Dosen",
+        "kategori": "Aksesori",
+        "prev_loans": 1,
+        "prev_late": 1,
+        "late_ratio": 1,
+        "duration_days": 14,
+        "is_late": 1
+    },
+    {
+        "user_id": 1109,
+        "peran": "Mahasiswa",
+        "kategori": "Jaringan",
+        "prev_loans": 7,
+        "prev_late": 4,
+        "late_ratio": 0.57,
+        "duration_days": 8,
+        "is_late": 1
+    },
+    {
+        "user_id": 1110,
+        "peran": "Mahasiswa",
+        "kategori": "Jaringan",
+        "prev_loans": 6,
+        "prev_late": 3,
+        "late_ratio": 0.5,
+        "duration_days": 14,
+        "is_late": 0
+    },
+    {
+        "user_id": 1111,
+        "peran": "Dosen",
+        "kategori": "Jaringan",
+        "prev_loans": 6,
+        "prev_late": 6,
+        "late_ratio": 1,
+        "duration_days": 10,
+        "is_late": 1
+    },
+    {
+        "user_id": 1112,
+        "peran": "Mahasiswa",
+        "kategori": "Komputer",
+        "prev_loans": 4,
+        "prev_late": 3,
+        "late_ratio": 0.75,
+        "duration_days": 8,
+        "is_late": 1
+    },
+    {
+        "user_id": 1113,
+        "peran": "Mahasiswa",
+        "kategori": "Jaringan",
+        "prev_loans": 4,
+        "prev_late": 3,
+        "late_ratio": 0.75,
+        "duration_days": 10,
+        "is_late": 0
+    },
+    {
+        "user_id": 1114,
+        "peran": "Dosen",
+        "kategori": "Perkakas",
+        "prev_loans": 3,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 6,
+        "is_late": 0
+    },
+    {
+        "user_id": 1115,
+        "peran": "Mahasiswa",
+        "kategori": "Jaringan",
+        "prev_loans": 15,
+        "prev_late": 4,
+        "late_ratio": 0.27,
+        "duration_days": 11,
+        "is_late": 0
+    },
+    {
+        "user_id": 1116,
+        "peran": "Mahasiswa",
+        "kategori": "Perkakas",
+        "prev_loans": 13,
+        "prev_late": 12,
+        "late_ratio": 0.92,
+        "duration_days": 2,
+        "is_late": 0
+    },
+    {
+        "user_id": 1117,
+        "peran": "Dosen",
+        "kategori": "Komputer",
+        "prev_loans": 4,
+        "prev_late": 2,
+        "late_ratio": 0.5,
+        "duration_days": 9,
+        "is_late": 1
+    },
+    {
+        "user_id": 1118,
+        "peran": "Dosen",
+        "kategori": "Aksesori",
+        "prev_loans": 9,
+        "prev_late": 8,
+        "late_ratio": 0.89,
+        "duration_days": 11,
+        "is_late": 1
+    },
+    {
+        "user_id": 1119,
+        "peran": "Dosen",
+        "kategori": "Perkakas",
+        "prev_loans": 4,
+        "prev_late": 3,
+        "late_ratio": 0.75,
+        "duration_days": 4,
+        "is_late": 0
+    },
+    {
+        "user_id": 1120,
+        "peran": "Mahasiswa",
+        "kategori": "Komputer",
+        "prev_loans": 6,
+        "prev_late": 6,
+        "late_ratio": 1,
+        "duration_days": 8,
+        "is_late": 1
+    },
+    {
+        "user_id": 1121,
+        "peran": "Dosen",
+        "kategori": "Perkakas",
+        "prev_loans": 10,
+        "prev_late": 6,
+        "late_ratio": 0.6,
+        "duration_days": 4,
+        "is_late": 0
+    },
+    {
+        "user_id": 1122,
+        "peran": "Mahasiswa",
+        "kategori": "Elektronik",
+        "prev_loans": 11,
+        "prev_late": 8,
+        "late_ratio": 0.73,
+        "duration_days": 5,
+        "is_late": 0
+    },
+    {
+        "user_id": 1123,
+        "peran": "Mahasiswa",
+        "kategori": "Komputer",
+        "prev_loans": 4,
+        "prev_late": 1,
+        "late_ratio": 0.25,
+        "duration_days": 13,
+        "is_late": 0
+    },
+    {
+        "user_id": 1124,
+        "peran": "Dosen",
+        "kategori": "Perkakas",
+        "prev_loans": 9,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 9,
+        "is_late": 0
+    },
+    {
+        "user_id": 1125,
+        "peran": "Dosen",
+        "kategori": "Aksesori",
+        "prev_loans": 14,
+        "prev_late": 2,
+        "late_ratio": 0.14,
+        "duration_days": 7,
+        "is_late": 0
+    },
+    {
+        "user_id": 1126,
+        "peran": "Mahasiswa",
+        "kategori": "Aksesori",
+        "prev_loans": 2,
+        "prev_late": 2,
+        "late_ratio": 1,
+        "duration_days": 2,
+        "is_late": 1
+    },
+    {
+        "user_id": 1127,
+        "peran": "Dosen",
+        "kategori": "Aksesori",
+        "prev_loans": 9,
+        "prev_late": 5,
+        "late_ratio": 0.56,
+        "duration_days": 2,
+        "is_late": 1
+    },
+    {
+        "user_id": 1128,
+        "peran": "Dosen",
+        "kategori": "Perkakas",
+        "prev_loans": 8,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 1,
+        "is_late": 0
+    },
+    {
+        "user_id": 1129,
+        "peran": "Mahasiswa",
+        "kategori": "Jaringan",
+        "prev_loans": 12,
+        "prev_late": 9,
+        "late_ratio": 0.75,
+        "duration_days": 6,
+        "is_late": 1
+    },
+    {
+        "user_id": 1130,
+        "peran": "Mahasiswa",
+        "kategori": "Elektronik",
+        "prev_loans": 4,
+        "prev_late": 4,
+        "late_ratio": 1,
+        "duration_days": 6,
+        "is_late": 1
+    },
+    {
+        "user_id": 1131,
+        "peran": "Dosen",
+        "kategori": "Jaringan",
+        "prev_loans": 8,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 3,
+        "is_late": 0
+    },
+    {
+        "user_id": 1132,
+        "peran": "Dosen",
+        "kategori": "Aksesori",
+        "prev_loans": 15,
+        "prev_late": 3,
+        "late_ratio": 0.2,
+        "duration_days": 3,
+        "is_late": 0
+    },
+    {
+        "user_id": 1133,
+        "peran": "Dosen",
+        "kategori": "Jaringan",
+        "prev_loans": 7,
+        "prev_late": 6,
+        "late_ratio": 0.86,
+        "duration_days": 11,
+        "is_late": 1
+    },
+    {
+        "user_id": 1134,
+        "peran": "Mahasiswa",
+        "kategori": "Perkakas",
+        "prev_loans": 0,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 1,
+        "is_late": 0
+    },
+    {
+        "user_id": 1135,
+        "peran": "Dosen",
+        "kategori": "Jaringan",
+        "prev_loans": 2,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 7,
+        "is_late": 0
+    },
+    {
+        "user_id": 1136,
+        "peran": "Mahasiswa",
+        "kategori": "Jaringan",
+        "prev_loans": 3,
+        "prev_late": 3,
+        "late_ratio": 1,
+        "duration_days": 3,
+        "is_late": 0
+    },
+    {
+        "user_id": 1137,
+        "peran": "Dosen",
+        "kategori": "Aksesori",
+        "prev_loans": 2,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 9,
+        "is_late": 0
+    },
+    {
+        "user_id": 1138,
+        "peran": "Mahasiswa",
+        "kategori": "Jaringan",
+        "prev_loans": 2,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 10,
+        "is_late": 0
+    },
+    {
+        "user_id": 1139,
+        "peran": "Dosen",
+        "kategori": "Perkakas",
+        "prev_loans": 14,
+        "prev_late": 8,
+        "late_ratio": 0.57,
+        "duration_days": 4,
+        "is_late": 0
+    },
+    {
+        "user_id": 1140,
+        "peran": "Mahasiswa",
+        "kategori": "Perkakas",
+        "prev_loans": 15,
+        "prev_late": 4,
+        "late_ratio": 0.27,
+        "duration_days": 8,
+        "is_late": 1
+    },
+    {
+        "user_id": 1141,
+        "peran": "Mahasiswa",
+        "kategori": "Jaringan",
+        "prev_loans": 3,
+        "prev_late": 2,
+        "late_ratio": 0.67,
+        "duration_days": 1,
+        "is_late": 0
+    },
+    {
+        "user_id": 1142,
+        "peran": "Mahasiswa",
+        "kategori": "Komputer",
+        "prev_loans": 15,
+        "prev_late": 8,
+        "late_ratio": 0.53,
+        "duration_days": 5,
+        "is_late": 1
+    },
+    {
+        "user_id": 1143,
+        "peran": "Dosen",
+        "kategori": "Jaringan",
+        "prev_loans": 9,
+        "prev_late": 6,
+        "late_ratio": 0.67,
+        "duration_days": 6,
+        "is_late": 1
+    },
+    {
+        "user_id": 1144,
+        "peran": "Mahasiswa",
+        "kategori": "Elektronik",
+        "prev_loans": 2,
+        "prev_late": 2,
+        "late_ratio": 1,
+        "duration_days": 9,
+        "is_late": 1
+    },
+    {
+        "user_id": 1145,
+        "peran": "Mahasiswa",
+        "kategori": "Jaringan",
+        "prev_loans": 14,
+        "prev_late": 7,
+        "late_ratio": 0.5,
+        "duration_days": 4,
+        "is_late": 0
+    },
+    {
+        "user_id": 1146,
+        "peran": "Mahasiswa",
+        "kategori": "Jaringan",
+        "prev_loans": 0,
+        "prev_late": 0,
+        "late_ratio": 0,
+        "duration_days": 9,
+        "is_late": 0
+    },
+    {
+        "user_id": 1147,
+        "peran": "Dosen",
+        "kategori": "Elektronik",
+        "prev_loans": 12,
+        "prev_late": 7,
+        "late_ratio": 0.58,
+        "duration_days": 10,
+        "is_late": 0
+    },
+    {
+        "user_id": 1148,
+        "peran": "Mahasiswa",
+        "kategori": "Komputer",
+        "prev_loans": 9,
+        "prev_late": 3,
+        "late_ratio": 0.33,
+        "duration_days": 5,
+        "is_late": 1
+    },
+    {
+        "user_id": 1149,
+        "peran": "Dosen",
+        "kategori": "Aksesori",
+        "prev_loans": 2,
+        "prev_late": 1,
+        "late_ratio": 0.5,
+        "duration_days": 1,
+        "is_late": 0
+    }
+]
