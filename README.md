@@ -1,58 +1,271 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="public/logo-nfc.png" alt="NFC Borrowing System Logo" width="120" style="border-radius: 20px;" />
 </p>
 
-## About Laravel
+<h1 align="center">🚀 NFC-BOS: Smart Borrowing System</h1>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center">
+  <strong>Sistem Informasi Peminjaman & Pengembalian Aset Berbasis Web NFC, Integrasi Machine Learning (Random Forest), dan Gateway Notifikasi WhatsApp</strong>
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<p align="center">
+  <em>Dikembangkan sebagai Proyek Tugas Akhir / Skripsi — Program Studi Teknik Informatika</em>
+</p>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<p align="center">
+  <img src="https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel 12" />
+  <img src="https://img.shields.io/badge/Vue.js-3.x-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white" alt="Vue 3" />
+  <img src="https://img.shields.io/badge/Inertia.js-v2.0-9553E9?style=for-the-badge&logo=inertia&logoColor=white" alt="Inertia.js v2" />
+  <img src="https://img.shields.io/badge/TailwindCSS-v3.x-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3" />
+  <img src="https://img.shields.io/badge/Scikit--Learn-Random_Forest-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn" />
+  <img src="https://img.shields.io/badge/Web_NFC-API-00599C?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Web NFC" />
+</p>
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 📌 Sekilas Proyek
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+**NFC-BOS (Borrowing System)** adalah platform manajemen peminjaman dan inventaris barang cerdas yang mengintegrasikan teknologi **Internet of Things (Web NFC)**, **Kecerdasan Buatan (Machine Learning)**, dan **Otomasi Pesan Singkat (WhatsApp Gateway)** dalam satu ekosistem web modern.
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+Sistem dirancang untuk mengatasi permasalahan pencatatan manual, lambatnya identifikasi fisik aset, minimnya analisis risiko keterlambatan pengembalian, serta keterlambatan pengingat peminjam di lingkungan laboratorium/institusi akademik.
 
-## Agentic Development
-
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
-
-```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
+```
+                           +-------------------------------------+
+                           |         Stiker NFC Tag (UID)        |
+                           +-------------------------------------+
+                                              |
+                                              v  (Scan Tap HP Android)
+                           +-------------------------------------+
+                           |    Web NFC API (Chrome Browser)     |
+                           +-------------------------------------+
+                                              |
+                                              v  (Inertia Vue SPA)
+                           +-------------------------------------+
+                           |        Laravel 12 REST Engine       |
+                           +-------------------------------------+
+                                      /               \
+                                     v                 v
+                 +-----------------------+         +-----------------------+
+                 |  Scikit-Learn ML      |         |  WhatsApp Gateway     |
+                 |  (Random Forest AI)   |         |  (Fonnte / Wablas)    |
+                 +-----------------------+         +-----------------------+
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+---
 
-## Contributing
+## ✨ Fitur Unggulan
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 1. 📲 Peminjaman & Pengembalian Aset Berbasis Web NFC
+- **Zero-Install Hardware Client**: Memanfaatkan **Web NDEFReader API** bawaan browser Chrome di Android untuk membaca serial UID stiker NFC secara instan tanpa perlu mengunduh aplikasi native.
+- **Validasi Cepat**: Pencocokan otomatis ID stiker barang saat pengajuan pinjam maupun konfirmasi serah terima kembali.
+- **Smart Fallback**: Dilengkapi antarmuka fallback modal apabila perangkat belum mendukung sensor NFC.
 
-## Code of Conduct
+### 2. 🧠 Prediksi Keterlambatan dengan Machine Learning (Random Forest)
+- Menggunakan algoritma **Random Forest Classifier (Scikit-Learn)** untuk memprediksi probabilitas keterlambatan pengembalian berdasarkan parameter:
+  - Frekuensi riwayat pinjam peminjam sebelumnya (`prev_loans`).
+  - Riwayat keterlambatan di masa lalu (`prev_late`).
+  - Rasio keterlambatan peminjam (`late_ratio`).
+  - Durasi peminjaman yang diajukan (`duration_days`).
+  - Peran peminjam (`Mahasiswa` / `Dosen`).
+  - Kategori barang yang dipinjam (`Elektronik`, `Jaringan`, `Komputer`, dll).
+- Terintegrasi langsung dengan Laravel melalui bridge proses asynchronous untuk memberikan status evaluasi risiko (Aman / Berisiko Tinggi) pada dashboard admin.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 3. 💬 Otomasi Pengingat & Notifikasi WhatsApp Gateway
+- Pengiriman notifikasi peringatan otomatis berbasis cron scheduling (`notifikasi:kirim-pengingat`) yang berjalan setiap menit untuk mendeteksi transaksi 10 menit sebelum tenggat batas waktu.
+- Manajemen template pesan dinamis:
+  - Pengingat Batas Waktu H-1 / 10 Menit.
+  - Peringatan Terlambat Ringan (1–2 hari).
+  - Peringatan Terlambat Berat (3+ hari) & info denda.
+  - Pelaporan barang rusak / hilang.
+- Tombol aksi **Broadcast WhatsApp Peminjam** langsung dari tabel dashboard admin.
 
-## Security Vulnerabilities
+### 4. 🔐 Autentikasi Modern & Multi-Role
+- **Google OAuth 2.0 Single Sign-On (SSO)**: Mahasiswa dapat masuk langsung menggunakan akun Google institusi/pribadi.
+- **Auto-Onboarding (Complete Profile)**: Form pengisian identitas otomatis (NIM, nomor WhatsApp, peran) pada login pertama kali.
+- **Role-Based Access Control (RBAC)**:
+  - **Admin**: Akses kendali penuh (Master Data Barang, Data Peminjam, Approval Workflow, Analitik Prediksi, Log Denda, Audit Trail).
+  - **User/Mahasiswa**: Akses mandiri (Katalog Barang, Formulir Pinjam NFC, Pengembalian NFC, Riwayat Transaksi).
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 🛠️ Arsitektur & Teknologi
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+| Lapisan | Teknologi | Deskripsi |
+| :--- | :--- | :--- |
+| **Backend** | **Laravel 12 (PHP 8.3+)** | Framework MVC utama, Eloquent ORM, REST API, Sanctum, Artisan Scheduler |
+| **Frontend** | **Vue 3 (Composition API)** | Reactive UI modern dengan `<script setup>` |
+| **SPA Bridge** | **Inertia.js v2.0** | Server-Driven SPA tanpa kompleksitas build REST endpoint manual |
+| **Styling** | **Tailwind CSS + Flowbite** | Desain responsif, modern card system, UI micro-interaction |
+| **Machine Learning**| **Python 3.10+ & Scikit-Learn** | Model Random Forest (`joblib`), Pandas, NumPy |
+| **Hardware / IoT** | **Web NFC (NDEFReader API)** | Protokol pembacaan stiker NFC melalui browser Google Chrome |
+| **Notifikasi** | **WhatsApp API (Fonnte / Wablas)** | HTTP Gateway pengiriman pesan otomatis ke nomor HP pengguna |
+| **Database** | **MySQL / SQLite** | Penyimpanan data relasional transaksi, aset, dan riwayat |
+
+---
+
+## 📂 Struktur Direktori Proyek
+
+```plaintext
+├── app/
+│   ├── Console/Commands/        # Artisan Cron Job (KirimPengingatOtomatis)
+│   ├── Http/Controllers/
+│   │   ├── Admin/               # Controller Master Data, Approval, Prediksi
+│   │   ├── Auth/                # Login, Register, Google OAuth, Profile Completion
+│   │   ├── NfcLoanController.php# Bridge integrasi Frontend NFC ke Skrip Python ML
+│   │   └── PeminjamanController.php
+│   ├── Models/                  # Barang, Peminjaman, Pengembalian, Pengajuan, User
+│   └── Services/                # WhatsAppGateway & NotifikasiService
+├── database/
+│   ├── migrations/              # Skema tabel database
+│   └── seeders/                 # Seeder akun admin & data demo
+├── ml_scripts/                  # Modul Machine Learning
+│   ├── dataset.json             # Dataset riwayat transaksi peminjaman
+│   ├── train_rf.py              # Script pelatihan model Random Forest
+│   ├── predict_rf.py            # Script inferensi prediksi real-time
+│   ├── model_rf.joblib          # Bobot model terlatih
+│   └── requirements.txt         # Dependensi Python
+├── public/                      # Static assets, gambar NFC, stiker aset
+├── resources/
+│   ├── js/
+│   │   ├── Components/          # ScanNfcPanel, DataTable, Sidebar, Modals
+│   │   ├── Layouts/             # SidebarLayout & GuestLayout
+│   │   ├── Pages/Admin/         # Tampilan Panel Admin (Dashboard, Prediksi, Barang)
+│   │   ├── Pages/User/          # Tampilan Pengguna (Pinjam, Kembali, Riwayat)
+│   │   └── nfc.js               # Handler API Web NDEFReader
+│   └── views/app.blade.php      # Root HTML template
+└── routes/
+    ├── web.php                  # Rute portal pengguna
+    ├── admin.php                # Rute panel admin
+    ├── auth.php                 # Rute autentikasi & Google SSO
+    └── console.php              # Rute background scheduler
+```
+
+---
+
+## ⚙️ Persyaratan Sistem
+
+Pastikan perangkat lokal Anda telah terpasang:
+- **PHP** `>= 8.3` (ekstensi `bcmath`, `curl`, `mbstring`, `openssl`, `pdo`, `tokenizer`, `xml`)
+- **Composer** `>= 2.x`
+- **Node.js** `>= 18.x` & **npm**
+- **Python** `>= 3.10` & **pip**
+- **HP Android berfitur NFC** & browser **Google Chrome** (untuk pengujian Web NFC langsung)
+- **Ngrok** / local tunnel HTTPS (wajib untuk Web NFC karena membutuhkan *Secure Context/HTTPS*)
+
+---
+
+## 🚀 Panduan Instalasi & Menjalankan Lokal
+
+### 1. Kloning Repositori
+```bash
+git clone https://github.com/BaridNst/TUGAS-AKHIR.git
+cd TUGAS-AKHIR
+```
+
+### 2. Instalasi Dependensi PHP & JavaScript
+```bash
+# Install PHP vendor packages
+composer install
+
+# Install Node modules
+npm install
+```
+
+### 3. Konfigurasi Lingkungan (.env)
+Salin berkas contoh konfigurasi:
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+Sesuaikan parameter `.env` berikut:
+```env
+APP_NAME="NFC Borrowing System"
+APP_URL=http://localhost:8000
+
+# Konfigurasi Database (MySQL)
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=db_peminjaman_nfc
+DB_USERNAME=root
+DB_PASSWORD=
+
+# Google OAuth 2.0 (Untuk fitur Login Google)
+GOOGLE_CLIENT_ID=isi_dengan_client_id_google_anda
+GOOGLE_CLIENT_SECRET=isi_dengan_client_secret_google_anda
+GOOGLE_REDIRECT_URI="${APP_URL}/auth/google/callback"
+
+# WhatsApp Gateway (Fonnte / Wablas)
+WHATSAPP_PROVIDER=fonnte
+WHATSAPP_TOKEN=isi_dengan_token_fonnte_anda
+```
+
+### 4. Setup Lingkungan Python (Machine Learning)
+Pasang pustaka dependensi Python untuk modul Random Forest:
+```bash
+cd ml_scripts
+pip install -r requirements.txt
+
+# (Opsional) Latih ulang model jika dataset diperbarui:
+python train_rf.py
+cd ..
+```
+
+### 5. Migrasi & Seeding Database
+Jalankan migrasi tabel dan buat akun admin bawaan:
+```bash
+php artisan migrate --seed
+```
+
+> 🔑 **Akun Default Admin:**
+> - **Username/Email**: `admin`
+> - **Password**: `123456`
+> - **Role**: `admin`
+
+### 6. Menjalankan Aplikasi
+Buka terminal dan jalankan server pengembangan:
+```bash
+# Terminal 1: Backend & Frontend Bundler
+composer run dev
+```
+*(Perintah ini akan sekaligus menjalankan server Laravel artisan dan Vite dev server).*
+
+### 7. Pengujian Fitur Web NFC di Smartphone (HTTPS)
+Fitur Web NFC mewajibkan protokol **HTTPS (Secure Context)**. Gunakan script tunnel ngrok yang telah disediakan:
+```bash
+# Terminal 2: Buka tunnel HTTPS port 8000
+.\http.ngrok.bat 8000
+```
+Buka URL `https://xxxx.ngrok-free.app` yang dihasilkan di browser **Google Chrome HP Android Anda**, lalu tap stiker NFC ke bagian belakang bodi handphone.
+
+---
+
+## 🧪 Menjalankan Pengujian Otomatis (Testing)
+
+Proyek ini dilengkapi dengan Feature & Unit Test komprehensif menggunakan PHPUnit:
+```bash
+php artisan test
+```
+
+Mencakup skenario pengujian:
+- Flow autentikasi & registrasi pengguna
+- CRUD Master Data Barang & Peminjam
+- Alur pemindaian NFC (`NfcScanFlowTest`)
+- Persetujuan & Penolakan Pengajuan Peminjaman/Pengembalian
+- Proteksi rute otorisasi berbasis Role Admin
+
+---
+
+## 👨‍💻 Penulis & Pengembang
+
+* **A. Barid Dinda Khair Nasution**
+  - Email: [baridnst23@gmail.com](mailto:baridnst23@gmail.com)
+  - GitHub: [@BaridNst](https://github.com/BaridNst)
+
+---
+
+## 📄 Lisensi
+
+Proyek ini dikembangkan untuk keperluan akademik Tugas Akhir dan dilisensikan di bawah [MIT License](LICENSE).
