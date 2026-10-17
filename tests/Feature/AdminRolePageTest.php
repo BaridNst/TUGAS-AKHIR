@@ -55,6 +55,23 @@ class AdminRolePageTest extends TestCase
             ->assertInertia(fn (AssertableInertia $page) => $page->component('Admin/Profile'));
     }
 
+    public function test_regular_user_cannot_access_admin_routes(): void
+    {
+        $user = User::factory()->create();
+
+        $this->actingAs($user)
+            ->get(route('admin.dataBarangPeminjaman'))
+            ->assertForbidden();
+
+        $this->actingAs($user)
+            ->get(route('admin.prediksi'))
+            ->assertForbidden();
+
+        $this->actingAs($user)
+            ->get(route('admin.pengguna'))
+            ->assertForbidden();
+    }
+
     public function test_admin_seeder_creates_admin_account(): void
     {
         $this->seed(AdminUserSeeder::class);

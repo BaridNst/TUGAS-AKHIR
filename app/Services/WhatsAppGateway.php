@@ -28,6 +28,10 @@ class WhatsAppGateway
             'label' => 'Pengingat Batas Waktu',
             'template' => 'Halo {nama}, pengingat: batas pengembalian barang "{nama_barang}" adalah {batas_kembali} ({sisa_hari} hari lagi). Mohon dikembalikan tepat waktu.',
         ],
+        'peringatan_dini_ai' => [
+            'label' => 'Peringatan Dini AI (Risiko Tinggi)',
+            'template' => 'Halo {nama}, sistem prediksi AI (Random Forest) mendeteksi risiko keterlambatan pada pengembalian "{nama_barang}". Batas kembali: {batas_kembali}. Mohon pastikan barang dikembalikan tepat waktu.',
+        ],
     ];
 
     public static function templates(): array
@@ -55,7 +59,7 @@ class WhatsAppGateway
         if (! $token) {
             Log::warning('WhatsApp Gateway: Token tidak dikonfigurasi');
 
-            return ['success' => false, 'message' => 'Token gateway tidak dikonfigurasi'];
+            return ['success' => false, 'message' => 'Token gateway tidak dikonfigurasi di file .env'];
         }
 
         try {
@@ -86,9 +90,24 @@ class WhatsAppGateway
                 'countryCode' => '62',
             ]);
 
-        return $response->successful()
-            ? ['success' => true, 'message' => 'Terkirim via Fonnte', 'data' => $response->json()]
-            : ['success' => false, 'message' => $response->json()['reason'] ?? 'Gagal kirim'];
+        if (! $response->successful()) {
+            return ['success' => false, 'message' => $response->json()['reason'] ?? 'Gagal menghubungi server Fonnte'];
+        }
+
+        $json = $response->json() ?? [];
+        $status = $json['status'] ?? false;
+
+        // Fonnte mengembalikan status: true jika sukses, dan status: false beserta reason jika gagal (misal device disconnected)
+        if ($status !== true && $status !== 'true') {
+            $reason = $json['reason'] ?? 'Gagal mengirim via Fonnte';
+            if (stripos($reason, 'disconnected') !== false) {
+                $reason = 'Device WhatsApp Fonnte sedang terputus (Disconnected). Silakan scan ulang QR code di https://md.fonnte.com/';
+            }
+
+            return ['success' => false, 'message' => $reason, 'data' => $json];
+        }
+
+        return ['success' => true, 'message' => 'Terkirim via Fonnte', 'data' => $json];
     }
 
     private static function sendViaWablas(string $nomor, string $pesan, string $token, ?string $device): array
@@ -104,9 +123,18 @@ class WhatsAppGateway
                 'message' => $pesan,
             ]);
 
-        return $response->successful()
-            ? ['success' => true, 'message' => 'Terkirim via Wablas', 'data' => $response->json()]
-            : ['success' => false, 'message' => $response->json()['message'] ?? 'Gagal kirim'];
+        if (! $response->successful()) {
+            return ['success' => false, 'message' => $response->json()['message'] ?? 'Gagal kirim via Wablas'];
+        }
+
+        $json = $response->json() ?? [];
+        $status = $json['status'] ?? false;
+
+        if ($status !== true && $status !== 'success') {
+            return ['success' => false, 'message' => $json['message'] ?? 'Gagal kirim via Wablas', 'data' => $json];
+        }
+
+        return ['success' => true, 'message' => 'Terkirim via Wablas', 'data' => $json];
     }
 
     private static function sendViaCustom(string $nomor, string $pesan): array

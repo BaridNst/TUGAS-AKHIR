@@ -23,8 +23,16 @@ class AppServiceProvider extends ServiceProvider
     {
         Vite::prefetch(concurrency: 3);
 
-        if (request()->hasHeader('x-forwarded-proto') && request()->header('x-forwarded-proto') === 'https') {
+        $host = request()->getHost();
+        $isNgrok = str_contains($host, 'ngrok');
+        $isExternal = $host !== 'localhost' && $host !== '127.0.0.1' && $host !== '::1';
+        $isHttpsForwarded = request()->header('x-forwarded-proto') === 'https' || request()->server('HTTP_X_FORWARDED_PROTO') === 'https';
+
+        if ($isNgrok || $isHttpsForwarded) {
             URL::forceScheme('https');
+        }
+
+        if ($isExternal || $isNgrok || $isHttpsForwarded) {
             Vite::useHotFile(storage_path('vite.hot.dummy'));
         }
     }

@@ -46,13 +46,13 @@ const loginWithGoogle = () => {
 
         <form @submit.prevent="submit" class="space-y-3">
             <div>
-                <InputLabel for="email" value="Nama" />
+                <InputLabel for="email" value="Email atau Nama Pengguna" />
                 <TextInput
                     id="email"
                     v-model="form.email"
                     type="text"
                     class="mt-1 block w-full !py-2.5 !text-sm sm:!py-3 sm:!text-[14px]"
-                    placeholder="Masukkan nama"
+                    placeholder="Masukkan email atau nama pengguna"
                     required
                     autofocus
                     autocomplete="username"

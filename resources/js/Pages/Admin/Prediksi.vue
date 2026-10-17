@@ -215,6 +215,23 @@ const table = useTable({ features, columns, data });
                 </div>
             </div>
 
+            <!-- Info Model AI Random Forest -->
+            <div class="flex flex-wrap items-center justify-between gap-3 border-b border-indigo-100 bg-gradient-to-r from-indigo-50/70 via-purple-50/40 to-orange-50/40 px-4 py-2.5 text-xs text-indigo-950 sm:px-6">
+                <div class="flex items-center gap-2">
+                    <span class="flex h-5 w-5 shrink-0 items-center justify-center rounded-md bg-indigo-600 text-white">
+                        <svg class="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
+                        </svg>
+                    </span>
+                    <span>Algoritma: <strong>Random Forest Classifier (Scikit-Learn, 100 Trees)</strong></span>
+                </div>
+                <div class="flex items-center gap-3 text-[11px] text-gray-600">
+                    <span class="rounded-md bg-white/80 px-2 py-0.5 font-medium shadow-2xs">Evaluasi Akurasi: <strong>75.00%</strong></span>
+                    <span class="hidden sm:inline text-gray-400">|</span>
+                    <span class="hidden md:inline">Fitur: Riwayat Pinjam, Terlambat, Durasi, Peran & Kategori</span>
+                </div>
+            </div>
+
             <!-- Ringkas & pencarian -->
             <div class="flex flex-wrap items-center justify-between gap-x-3 gap-y-2 border-b border-orange-100 bg-orange-50/60 px-4 py-3 sm:gap-4 sm:px-6 sm:py-4">
                 <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">

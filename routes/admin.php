@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
+Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('data-barang&peminjaman', [AdminMenuController::class, 'dataBarangPeminjaman'])->name('dataBarangPeminjaman');
     Route::get('data-barang&peminjaman/data-barang', [AdminMenuController::class, 'dataBarangTab'])->name('dataBarangPeminjaman.barang');
     Route::get('data-barang&peminjaman/data-peminjaman', [AdminMenuController::class, 'dataPeminjamanTab'])->name('dataBarangPeminjaman.peminjaman');

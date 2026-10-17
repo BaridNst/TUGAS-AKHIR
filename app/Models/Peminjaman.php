@@ -47,6 +47,7 @@ use Illuminate\Support\Carbon;
     'batas_kembali',
     'status',
     'keperluan',
+    'pengingat_terkirim_at',
 ])]
 class Peminjaman extends Model
 {
@@ -70,6 +71,7 @@ class Peminjaman extends Model
             'jam_pinjam' => 'datetime',
             'jam_selesai' => 'datetime',
             'batas_kembali' => 'date',
+            'pengingat_terkirim_at' => 'datetime',
         ];
     }
 

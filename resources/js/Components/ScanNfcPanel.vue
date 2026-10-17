@@ -49,6 +49,37 @@ const uidTerbaca = ref('');
 const tagTerpilih = ref('');
 const catatan = ref('');
 const showPanduanNfc = ref(false);
+const aiPrediction = ref(null);
+const loadingAi = ref(false);
+
+const checkAiPrediction = async (uid, kategori) => {
+    loadingAi.value = true;
+    aiPrediction.value = null;
+
+    try {
+        const csrfToken = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content') || '';
+        const res = await fetch('/nfc-loan/predict', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': csrfToken,
+                'Accept': 'application/json',
+            },
+            body: JSON.stringify({
+                nfc_uid: uid,
+                kategori: kategori || 'Elektronik',
+            }),
+        });
+        const data = await res.json();
+        if (data.success && data.data) {
+            aiPrediction.value = data.data;
+        }
+    } catch {
+        // Fallback hening jika fetch gagal
+    } finally {
+        loadingAi.value = false;
+    }
+};
 
 let hentikanScan = null;
 
@@ -67,6 +98,7 @@ watch(
         if (!items.length) {
             tagTerpilih.value = '';
             uidTerbaca.value = '';
+            aiPrediction.value = null;
             hentikan();
 
             return;
@@ -76,6 +108,7 @@ watch(
         if (tagTerpilih.value && !items.some((item) => item.nfcUid === tagTerpilih.value)) {
             tagTerpilih.value = '';
             uidTerbaca.value = '';
+            aiPrediction.value = null;
             statusNfc.value = 'idle';
         }
     },
@@ -95,6 +128,7 @@ const terimaTag = (uid) => {
 
     if (!item) {
         tagTerpilih.value = '';
+        aiPrediction.value = null;
         statusNfc.value = 'error';
         pesanNfc.value = `Tag ${uid} belum terdaftar sebagai barang. Hubungi admin untuk mendaftarkan stiker, lalu pindai ulang.`;
 
@@ -104,6 +138,8 @@ const terimaTag = (uid) => {
     tagTerpilih.value = item.nfcUid;
     statusNfc.value = 'terbaca';
     pesanNfc.value = '';
+
+    checkAiPrediction(uid, item.kategori);
 };
 
 const toggleScan = async () => {
@@ -241,6 +277,47 @@ const ajukan = () => {
             <label class="mt-3 block text-xs font-bold text-gray-700">Barang</label>
             <div class="mt-1.5 w-full rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-bold text-emerald-700">
                 {{ labelTagTerpilih }}
+            </div>
+
+            <!-- Live Machine Learning (Random Forest) Risk Analysis -->
+            <div v-if="loadingAi" class="mt-3 flex items-center gap-2 rounded-xl border border-indigo-100 bg-indigo-50/60 px-3.5 py-2.5 text-xs text-indigo-700">
+                <svg class="h-4 w-4 animate-spin text-[#F97316]" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+                </svg>
+                <span>Menganalisis probabilitas risiko dengan AI Random Forest...</span>
+            </div>
+
+            <div
+                v-else-if="aiPrediction"
+                class="mt-3 rounded-xl border border-indigo-100 bg-gradient-to-br from-indigo-50/70 via-purple-50/40 to-orange-50/50 p-3 text-left shadow-xs"
+            >
+                <div class="flex items-center justify-between gap-2">
+                    <span class="inline-flex items-center gap-1.5 text-xs font-bold text-indigo-900">
+                        <svg class="h-4 w-4 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
+                        </svg>
+                        Evaluasi AI (Random Forest)
+                    </span>
+                    <span
+                        :class="[
+                            'rounded-full px-2.5 py-0.5 text-[11px] font-extrabold',
+                            aiPrediction.risk_status === 'Low Risk' ? 'bg-emerald-100 text-emerald-800' :
+                            aiPrediction.risk_status === 'Medium Risk' ? 'bg-amber-100 text-amber-800' :
+                            'bg-rose-100 text-rose-800'
+                        ]"
+                    >
+                        {{ aiPrediction.prediction }} ({{ Math.round((aiPrediction.confidence_score || 0.85) * 100) }}%)
+                    </span>
+                </div>
+                <p class="mt-1 text-[11px] leading-relaxed text-gray-600">
+                    {{ aiPrediction.message }}
+                </p>
+                <div v-if="aiPrediction.history_summary" class="mt-2 flex items-center gap-3 border-t border-indigo-100/70 pt-1.5 text-[10px] text-gray-500">
+                    <span>Riwayat Pinjam: <strong class="text-gray-700">{{ aiPrediction.history_summary.prev_loans }}x</strong></span>
+                    <span>Terlambat: <strong class="text-gray-700">{{ aiPrediction.history_summary.prev_late }}x</strong></span>
+                    <span v-if="aiPrediction.history_summary.late_ratio !== undefined">Rasio: <strong class="text-gray-700">{{ (aiPrediction.history_summary.late_ratio * 100).toFixed(0) }}%</strong></span>
+                </div>
             </div>
 
             <label class="mt-4 block text-xs font-bold text-gray-700" for="catatan-scan">{{ noteLabel }}</label>

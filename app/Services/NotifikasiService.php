@@ -8,7 +8,7 @@ use App\Models\User;
 
 class NotifikasiService
 {
-    public static function tentukanJenisNotifikasi(Peminjaman $pinjam): ?string
+    public static function tentukanJenisNotifikasi(Peminjaman $pinjam, ?array $mlResult = null): ?string
     {
         if ($pinjam->batas_kembali === null) {
             return null;
@@ -24,8 +24,13 @@ class NotifikasiService
             return 'terlambat_ringan';
         }
 
-        if ($sisaHari <= 2) {
+        if ($sisaHari <= 1) {
             return 'pengingat_batas';
+        }
+
+        // Peringatan dini cerdas jika model Random Forest mendeteksi risiko tinggi
+        if ($mlResult && (($mlResult['risk_status'] ?? '') === 'High Risk' || ($mlResult['prob_late'] ?? 0) >= 0.5)) {
+            return 'peringatan_dini_ai';
         }
 
         return null;
